@@ -98,7 +98,7 @@ def print_all():
   print ("Dew Point: ", dewpoint)
 
 #print_all()
-print("---")
+#print("---")
 
 def print_some():
   print (current_time)
@@ -106,4 +106,4 @@ def print_some():
   print ("H:", humidity)
   print ("P:", pressure)
 
-print_some()
+#print_some()
