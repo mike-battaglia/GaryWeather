@@ -19,7 +19,7 @@ feelslike = bme280_sensor.feels
 dewpoint = bme280_sensor.dewpoint
 
 cursor = cnx.cursor()
-sql = "INSERT INTO weather_data (datetime, temperature, humidity, pressure, feels, dewpoint) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+sql = "INSERT INTO weather_data (datetime, temperature, humidity, pressure, feels, dewpoint) VALUES (%s, %s, %s, %s, %s, %s)"
 val = (primarykey, temperature, humidity, pressure, feelslike, dewpoint)
 
 def send_to_db():
@@ -36,6 +36,6 @@ def print_all_the_things():
   print("Feelslike:", feelslike)
   print("Dewpoint:", dewpoint)
 
-# send_to_db()
+send_to_db()
 
-# print_all_the_things
+print_all_the_things()
